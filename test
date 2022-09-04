@@ -1,0 +1,3 @@
+echo "What is the password"
+read pass
+if [$pass=AWAIS -o $pass=Awais -o $pass= ]

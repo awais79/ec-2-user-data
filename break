@@ -1,0 +1,17 @@
+while true
+do
+echo "Enter your choice"
+echo "Enter w to quit"
+echo "Menu"
+echo "a. Today's date"
+echo "b. List of users"
+echo "c. Name of the home directory"
+read choice
+case $choice in
+a) clear;date;;
+b) clear;who;;
+c) clear;echo "Your home directory is $HOME";;
+w) break;;
+*) echo "Not a valid choice"
+esac
+done

@@ -1,0 +1,17 @@
+ans=38
+count=0
+echo "I am thinking of a number between 1 and 50"
+echo -e "Please guess a number"
+read guess
+until [ $guess -eq $ans ]
+do
+if [ $guess -gt $ans ]
+then
+echo "The number is too high"
+else
+echo "The number is too low"
+fi
+count=`expr $count + 1`
+read guess
+done
+echo "You have guessed the number after $count trials"

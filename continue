@@ -1,0 +1,17 @@
+echo "Do you want to enter a value?(Y/y)"
+read ans
+while [ $ans=Y -o $ans=y ]
+do
+echo "Enter a name"
+read name
+echo $name >> names
+echo "Do you wish to continue?(Y/y)"
+read wish
+if [ $wish=Y -o $wish=y ]
+then
+continue
+else
+echo "The contents of file is : `cat names`"
+exit
+fi
+done

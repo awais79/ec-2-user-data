@@ -1,0 +1,14 @@
+echo "Enter Employees Basic"
+read basic
+if [$basic -gt 5000]
+then
+HRA=`expr $basic / 5`
+echo -e "The HRA of employee is $HRA\c"
+elif [$basic -ge 4000 -a $basic -le 5000]
+then
+HRA=`expr $basic / 4`
+echo -e "The HRA of employee is $HRA\c"
+else
+HRA=`expr $basic / 3`
+echo "The HRA of employee is $HRA"
+fi

@@ -1,0 +1,4 @@
+echo "Enter the fruit name: "
+read name
+grep $name Awais1 && echo "Pattern found"
+grep $name Awais1 || echo "Pattern not Found"

@@ -1,0 +1,8 @@
+echo "Enter your name: "
+read name
+if [ -z $name ]
+then
+echo "Enter your complete name"
+else
+echo "Your name is $name"
+fi

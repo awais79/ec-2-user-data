@@ -1,0 +1,7 @@
+echo "Please enter the fruit name: "
+read name
+while grep $name Awais1 > null
+do
+echo "Fruit found"
+exit
+done

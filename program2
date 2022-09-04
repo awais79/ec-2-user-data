@@ -1,0 +1,12 @@
+echo "Menu"
+echo "Please Enter your choice: "
+echo "1. Displays long list of files"
+echo "2. Display list of files including hidden files"
+echo "3. Display a current directory of file"
+read choice
+case $choice in
+1) ls -l;;
+2) ls -al;;
+3) pwd;;
+*) echo "Please enter the valid choice"
+esac

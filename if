@@ -1,0 +1,8 @@
+echo "Enter the name of fruit: "
+read name
+if (grep $name Awais1 > /dev/null)
+then
+echo "The fruit is found"
+else
+echo "Sorry the fruit is not found"
+fi

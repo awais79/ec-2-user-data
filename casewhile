@@ -1,0 +1,16 @@
+case $# in
+0) num=30;;
+*) num=$1
+echo "Choose a option"
+esac
+while true
+do
+echo "$num"
+num=`expr $num - 1`
+if [ $num -le 0 ]
+then
+echo "We have listed the numbers as you requested"
+exit
+fi
+done
+

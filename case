@@ -1,0 +1,12 @@
+echo "Menu"
+echo "1. Your current directory"
+echo "2. Today's date"
+echo "3. List of users logged in"
+echo "Please enter your choice"
+read choice
+case $choice in
+1) pwd;;
+2) date;;
+3) who;;
+*) echo "Invalid choice selected"
+esac

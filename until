@@ -1,0 +1,8 @@
+echo "Please enter the amount: "
+read number
+var=0
+until [ $var -gt $number ]
+do
+echo "$var"
+var=`expr $var + 1`
+done
